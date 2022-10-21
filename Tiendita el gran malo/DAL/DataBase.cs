@@ -6,7 +6,32 @@ using System.Threading.Tasks;
 
 namespace Tiendita_el_gran_malo.DAL
 {
-    class DataBase
+    public class DataBase
     {
+        public static string getStrConnection()
+        {
+            return Settings.Default.ParcialConnectionString;
+        }
+
+        public SqlConnection getConnection()
+        {
+            SqlConnection Con = new SqlConnection(getConnection());
+            return Con
+        }
+
+        public bool testConection()
+        {
+            SqlConnection Con = this.getConnection();
+            Con.Open()
+                if (Con.State == System.Data.ConnectionState.Open)
+                {
+                   Con.Close();
+                   return true;
+                }
+                else
+                {
+                   return false
+                }
+        }
     }
 }
