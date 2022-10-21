@@ -39,7 +39,7 @@ namespace Tiendita_el_gran_malo.DAL
             }
         }
 
-        public bool createGanancias(EmpleadosBLL emp, GananciasBLL Ganancias, GastosBLL Gastos, LocalBLL Local, Proveedor proveedor)
+        public bool createGanancias(EmpleadosBLL emp, GananciasBLL Ganancias, GastosBLL Gastos, LocalBLL Local, ProveedorBLL proveedor)
         {
             try
             {
@@ -47,7 +47,7 @@ namespace Tiendita_el_gran_malo.DAL
                 using (SqlCommand cmd = Con.CreateCommand())
                 {
                     Con.Open();
-                    cmd.CommandText = "INSERT INTO Ganancias  (id_local, ganancias_diarias, ganancias_semanales, ganancias_mensuales, ganancias_anuales) VALUES (@idlocal, @gan_di, @gan_sem @gan_men, Ganancias.anuales;";
+                    cmd.CommandText = "INSERT INTO Ganancias  (id_local, ganancias_diarias, ganancias_semanales, ganancias_mensuales, ganancias_anuales) VALUES (@idlocal, @gan_di, @gan_sem @gan_men, @gan_anu);";
                     cmd.Parameters.AddWithValue("@id_local", Ganancias.id_local);
                     cmd.Parameters.AddWithValue("@gan_di", Ganancias.ganancias_diarias);
                     cmd.Parameters.AddWithValue("@gan_sem", Ganancias.ganancias_semanales);
@@ -69,7 +69,7 @@ namespace Tiendita_el_gran_malo.DAL
             }
         }
 
-        public bool createGanancias(EmpleadosBLL emp, GananciasBLL Ganancias, GastosBLL Gastos, LocalBLL Local, Proveedor proveedor)
+        public bool createGanancias(EmpleadosBLL emp, GananciasBLL Ganancias, GastosBLL Gastos, LocalBLL Local, ProveedorBLL proveedor)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace Tiendita_el_gran_malo.DAL
                 using (SqlCommand cmd = Con.CreateCommand())
                 {
                     Con.Open();
-                    cmd.CommandText = "INSERT INTO Ganancias  (id_local, ganancias_diarias, ganancias_semanales, ganancias_mensuales, ganancias_anuales) VALUES (@idlocal, @gan_di, @gan_sem @gan_men, Ganancias.anuales;";
+                    cmd.CommandText = "INSERT INTO Ganancias  (id_local, ganancias_diarias, ganancias_semanales, ganancias_mensuales, ganancias_anuales) VALUES (@idlocal, @gan_di, @gan_sem @gan_men, @gan_anu);";
                     cmd.Parameters.AddWithValue("@id_local", Ganancias.id_local);
                     cmd.Parameters.AddWithValue("@gan_di", Ganancias.ganancias_diarias);
                     cmd.Parameters.AddWithValue("@gan_sem", Ganancias.ganancias_semanales);
