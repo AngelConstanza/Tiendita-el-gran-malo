@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace Tiendita_el_gran_malo.DAL
 {
-    public class GasnanciasBLL
+    public class GananciasDAL
     {
         private Database db;
-        public GananciasBLL()
+        public GananciasDAL()
         {
             db = new Database();
         }
