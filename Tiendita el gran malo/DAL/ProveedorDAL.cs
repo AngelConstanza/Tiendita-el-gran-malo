@@ -68,7 +68,7 @@ namespace Tiendita_el_gran_malo.DAL
             }
         }
 
-        public bool createEmpleado(EmpleadosBLL emp, GananciasBLL Ganancias, GastosBLL Gastos, LocalBLL Local, Proveedor proveedor)
+        public bool createEmpleado(EmpleadosBLL emp, GananciasBLL Ganancias, GastosBLL Gastos, LocalBLL Local, ProveedorBLL proveedor)
         {
             try
             {
